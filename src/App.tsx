@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+import Navbar from './components/Navbar'
 
 // function App() {
 //   return (
@@ -23,12 +23,19 @@ import './App.css';
 //   );
 // }
 
-export default function App() {
+function App() {
   return (
-    <h1 className="text-3xl font-bold bg-sky-400 underline">
-      Hello world!
-    </h1>
+    <div className="App">
+
+      <h1 className="text-3xl font-bold bg-sky-400 underline">
+        Hello world!
+      </h1>
+      <Navbar /> {/* Corrected component usage */}
+    </div>
   )
 }
 //
-// export default App;
+export default App;
+//
+// create navbars and footers and stuf
+export { }
