@@ -1,6 +1,7 @@
 import React from 'react';
 // import './App.css';
 import Navbar from './components/Navbar'
+import Home from './components/Home'
 
 // function App() {
 //   return (
@@ -27,10 +28,8 @@ function App() {
   return (
     <div className="App">
 
-      <h1 className="text-3xl font-bold bg-sky-400 underline">
-        Hello world!
-      </h1>
       <Navbar /> {/* Corrected component usage */}
+      <Home />  {/* Corrected component usage */}
     </div>
   )
 }
@@ -38,4 +37,3 @@ function App() {
 export default App;
 //
 // create navbars and footers and stuf
-export { }
