@@ -1,5 +1,4 @@
 import React from 'react'
-import HTML from '../assets/html.png'
 import Azure from '../assets/clouds/azure.png'
 import Aws from '../assets/clouds/aws.png'
 import Gcp from '../assets/clouds/gcp.png'
@@ -7,7 +6,10 @@ import Ts from '../assets/langs/ts.png'
 import go from '../assets/langs/go.png'
 import python from '../assets/langs/python.png'
 import c from '../assets/langs/c.png'
-
+import terraform from '../assets/tech/terraform.png'
+import kube from '../assets/tech/kube.png'
+import pipeline from '../assets/tech/pipeline.png'
+import git from '../assets/tech/git.png'
 const Skills = () => {
   return (
     <div className='bg-[#0a192f] text-stone-400'>
@@ -51,20 +53,20 @@ const Skills = () => {
         </div>
         <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-6'>
           <div className='shadow-md shadow-[#040c16] hover:scale-110 hover:shadow-pink-950 duration-300'>
-            <img className='w-20 mx-auto' src={HTML} alt='HTML icon' />
-            <p className='my-4'> HTML</p>
+            <img className='w-20 mx-auto' src={terraform} alt='terraform icon' />
+            <p className='my-4'> Terraform</p>
           </div>
           <div className='shadow-md shadow-[#040c16] hover:scale-110 hover:shadow-pink-950 duration-300'>
-            <img className='w-20 mx-auto' src={HTML} alt='HTML icon' />
-            <p className='my-4'> HTML</p>
+            <img className='h-20 mx-auto' src={kube} alt='kube icon' />
+            <p className='my-4'> Kubernetes</p>
           </div>
           <div className='shadow-md shadow-[#040c16] hover:scale-110 hover:shadow-pink-950 duration-300'>
-            <img className='w-20 mx-auto' src={HTML} alt='HTML icon' />
-            <p className='my-4'> HTML</p>
+            <img className='w-20 mx-auto' src={git} alt='git icon' />
+            <p className='my-4'> Git</p>
           </div>
           <div className='shadow-md shadow-[#040c16] hover:scale-110 hover:shadow-pink-950  duration-300'>
-            <img className='w-20 mx-auto' src={HTML} alt='HTML icon' />
-            <p className='my-4'> HTML</p>
+            <img className='w-20 mx-auto' src={pipeline} alt='pipeline icon' />
+            <p className='my-4'> Pipeline </p>
           </div>
         </div>
       </div>
