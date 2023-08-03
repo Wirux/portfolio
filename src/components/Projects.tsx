@@ -16,7 +16,7 @@ import git from '../assets/tech/git.png'
 const Projects = () => {
   return (
     <div id='projects' className='bg-[#0a192f] text-stone-400'>
-      <div className='max-w-[1000px] mx-auto p-4 py-8 flex flex-col justify-center w-full h-full'>
+      <div className='max-w-[1000px] mx-auto p-4 py-6 flex flex-col justify-center w-full h-full'>
         <div>
           <p className='text-4xl border-b-4 border-pink-700'>
             Projects

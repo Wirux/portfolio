@@ -12,7 +12,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(false)
   const handleClick = () => setNav(!nav)
   return (
-    <div className="fixed flex bg-[#0a192f] h-20 w-full text-gray-400 justify-between items-center px-4 z-50">
+    <div className='fixed flex bg-[#0a192f] h-20 w-full text-gray-400 justify-between items-center px-4 z-50 '>
       <div >
         <img className='h-auto max-w-lg rounded-lg' src={wolfAvatar} alt='logo' style={{ width: '80px' }} />
       </div>
@@ -25,12 +25,12 @@ const Navbar = () => {
             </Link>
           </li>
           <li className='rounded-lg text-gray-400 border-2 border-pink-900 hover:bg-pink-900 hover:scale-110 duration-300 py-3'>
-            <Link to='skills' smooth={true} duration={500}>
+            <Link to='skills' smooth={true} duration={500} offset={-80}>
               Skills
             </Link>
           </li>
           <li className='rounded-lg text-gray-400 border-2 border-pink-900 hover:bg-pink-900 hover:scale-110 duration-300 py-3'>
-            <Link to='projects' smooth={true} duration={500}>
+            <Link to='projects' smooth={true} duration={500} offset={-80}>
               Projects
             </Link>
           </li>

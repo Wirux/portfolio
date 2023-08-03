@@ -29,7 +29,7 @@ const Skills = () => {
             <p className='my-4'>Azure</p>
           </div>
           <div className='shadow-md shadow-[#040c16] hover:scale-110 hover:shadow-pink-950 duration-300'>
-            <img className='w-20 mx-auto' src={Aws} alt='AWS icon' />
+            <img className='w-20 py-4 mx-auto' src={Aws} alt='AWS icon' />
             <p className='my-4'>AWS</p>
           </div>
         </div>
