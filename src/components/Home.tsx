@@ -11,8 +11,10 @@ const Home = () => {
         <p className='text-gray-500 py-4 max-w-[700px]'>ahdioad diojaiwod oixahwdoixaw ioiwdjoawjd awiodjawn oawidjawd awdadsd wdojawd aopdwd awdwad owajdawd</p>
         <div> <button className='text-stone-500 group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-700 hover:border-pink-700'>
           View work
-          <span className='group-hover:rotate-90 duration-200'><HiArrowNarrowRight className='ml-3' />
-          </span>
+          {/* <span className='group-hover:rotate-90 duration-200'> */}
+          <div className='animate-spin' />
+          {/* <HiArrowNarrowRight className='ml-3' /> */}
+          {/* </span> */}
         </button>
         </div>
       </div>
