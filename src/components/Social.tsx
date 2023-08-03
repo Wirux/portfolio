@@ -2,6 +2,7 @@ import React from 'react'
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
 import { BsFillPersonFill } from 'react-icons/bs'
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 function Social() {
   return (
@@ -22,9 +23,10 @@ function Social() {
               Email <HiOutlineMail size={30} />
             </a></li>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-200 bg-gray-800'>
-            <a className='flex justify-between items-center w-full text-gray-200' href='/'>
+            <Link to='contact' smooth={true} duration={500} className='flex justify-between items-center w-full text-gray-200'>
               Resume <BsFillPersonFill size={30} />
-            </a></li>
+            </Link>
+          </li>
         </ul>
       </div>
       <div className='lg:hidden max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full bg-[#0a192f]' >
@@ -46,10 +48,10 @@ function Social() {
             <HiOutlineMail size={40} />
             <p>Email</p>
           </a>
-          <a className='shadow-md shadow-[#040c16] hover:scale-110 hover:shadow-pink-950 duration-300 flex flex-col items-center justify-center text-center text-gray-300' href='google.com'>
+          <Link to='contact' smooth={true} duration={500} className='shadow-md shadow-[#040c16] hover:scale-110 hover:shadow-pink-950 duration-300 flex flex-col items-center justify-center text-center text-gray-300' href='google.com'>
             <BsFillPersonFill size={40} />
             <p>Resume</p>
-          </a>
+          </Link>
         </div>
       </div>
     </div >
