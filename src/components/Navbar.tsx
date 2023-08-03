@@ -11,7 +11,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(false)
   const handleClick = () => setNav(!nav)
   return (
-    <div className="fixed flex justify-between items-center px-4 bg-[#0a192f] h-[80px] w-full text-sky-200">
+    <div className="fixed flex bg-[#0a192f] h-20 w-full text-sky-200">
       <div >
         <img src={wolfAvatar} alt='logo' style={{ width: '80px' }} />
       </div>
@@ -36,27 +36,27 @@ const Navbar = () => {
         <li className='py-6 text-4xl'>ff</li>
       </ul>
       {/* social icons */}
-      <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
-        <ul>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-200 bg-sky-950'>
-            <a className='flex justify-between items-center w-full text-sky-200' href='/'>
-              Linkendin <FaLinkedin size={30} />
-            </a>
-          </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-200 bg-green-950'>
-            <a className='flex justify-between items-center w-full text-sky-200' href='/'>
-              GitHub <FaGithub size={30} />
-            </a></li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-200 bg-purple-950'>
-            <a className='flex justify-between items-center w-full text-sky-200' href='/'>
-              Email <HiOutlineMail size={30} />
-            </a></li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-200 bg-gray-800'>
-            <a className='flex justify-between items-center w-full text-sky-200' href='/'>
-              Resume <BsFillPersonFill size={30} />
-            </a></li>
-        </ul>
-      </div>
+      {/* <div className='hidden lg:flex fixed flex-col top-[35%] left-0'> */}
+      {/*   <ul> */}
+      {/*     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-200 bg-sky-950'> */}
+      {/*       <a className='flex justify-between items-center w-full text-sky-200' href='/'> */}
+      {/*         Linkendin <FaLinkedin size={30} /> */}
+      {/*       </a> */}
+      {/*     </li> */}
+      {/*     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-200 bg-green-950'> */}
+      {/*       <a className='flex justify-between items-center w-full text-sky-200' href='/'> */}
+      {/*         GitHub <FaGithub size={30} /> */}
+      {/*       </a></li> */}
+      {/*     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-200 bg-purple-950'> */}
+      {/*       <a className='flex justify-between items-center w-full text-sky-200' href='/'> */}
+      {/*         Email <HiOutlineMail size={30} /> */}
+      {/*       </a></li> */}
+      {/*     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-200 bg-gray-800'> */}
+      {/*       <a className='flex justify-between items-center w-full text-sky-200' href='/'> */}
+      {/*         Resume <BsFillPersonFill size={30} /> */}
+      {/*       </a></li> */}
+      {/*   </ul> */}
+      {/* </div> */}
     </div >
   )
 }

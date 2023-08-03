@@ -22,7 +22,7 @@ const Projects = () => {
             Projects
           </p>
         </div>
-        <div className='w-full grid grid-cols-1 sm:grid-cols-2  gap-4 text-center py-6 border-b-2 border-pink-800'>
+        <div className='w-full grid grid-cols-1 sm:grid-cols-2  gap-4 text-center py-6 '>
           <div className='group relative hover:scale-105 hover:shadow-pink-950 duration-300'>
             <img className='w-full mx-auto' src={iac} alt='bike project' />
             {/* ---- icons ---- */}

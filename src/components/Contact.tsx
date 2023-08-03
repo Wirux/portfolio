@@ -5,7 +5,9 @@ function Contact() {
     <div data-name='contact' className='w-full h-screen bg-[#0a192f] flex justify-center items-center p-4'>
       <form method='POST' action='https://getform.io/f/53c8701b-522a-4a17-a3c9-1149cc2900d6' className='flex flex-col max-w-[600px] w-full'>
         <div className='pb-8'>
-          <p className='text-4xl font-bold inline border-b-4 border-pink-600 text-stone-400'>Contact</p>
+          <p className='text-4xl border-b-4 border-pink-700 text-stone-400'>
+            Contact
+          </p>
           <p className='text-gray-400 py-4'>Fill out the contact form below, or use the other channel. </p>
         </div>
         <input className='bg-[#ccd6f6] p-2' type="text" placeholder='Name' name='name' />
