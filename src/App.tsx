@@ -35,7 +35,7 @@ function App() {
 
       <Navbar /> {/* Corrected component usage */}
       <Home />  {/* Corrected component usage */}
-      <About /> {/* Corrected component usage */}
+      {/* <About /> {/* Corrected component usage */}
       <Skills /> {/* Corrected component usage */}
       <Projects /> {/* Corrected component usage */}
       <Social /> {/* Corrected component usage */}
@@ -46,4 +46,4 @@ function App() {
 //
 export default App;
 //
-// create navbars and footers and stuf
+// create navbars and footers and stuf300 

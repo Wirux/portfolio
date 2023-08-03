@@ -12,7 +12,7 @@ import pipeline from '../assets/tech/pipeline.png'
 import git from '../assets/tech/git.png'
 const Skills = () => {
   return (
-    <div className='bg-[#0a192f] text-stone-400'>
+    <div id='skills' className='bg-[#0a192f] text-stone-400'>
       <div className='max-w-[1000px] mx-auto p-4 py-8 flex flex-col justify-center w-full h-full'>
         <div>
           <p className='text-4xl border-b-4 border-pink-700'>
