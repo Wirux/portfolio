@@ -33,7 +33,7 @@ function Social() {
             Social
           </p>
         </div>
-        <div className='w-full grid grid-cols-2 gap-4 text-center py-6 '>
+        <div className='w-full grid grid-cols-2 gap-4 text-center py-8 '>
           <a className='shadow-md shadow-[#040c16] hover:scale-110 hover:shadow-pink-950 duration-300 flex flex-col items-center justify-center text-center text-sky-700' href='google.com'>
             <FaLinkedin size={40} />
             <p>Linkendin</p>
