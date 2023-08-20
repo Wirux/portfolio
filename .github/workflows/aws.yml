@@ -52,7 +52,7 @@ jobs:
       - name: configure aws credentials
         uses: aws-actions/configure-aws-credentials@v1.7.0
         with:
-          role-to-assume: <arn:aws:iam::301135933537:role/portfolio-gihub-oidc> #change to reflect your IAM role’s ARN
+          role-to-assume: arn:aws:iam::301135933537:role/portfolio-gihub-oidc #change to reflect your IAM role’s ARN
           role-session-name: GitHub_to_AWS_via_FederatedOIDC
           aws-region: eu-central-1
       # Hello from AWS: WhoAmI
