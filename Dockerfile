@@ -1,21 +1,27 @@
+# Fetching the latest node image on apline linux
+FROM node:alpine AS builder
 
-# Use an official Node.js runtime as the base image
-FROM node:14-alpine
+# Declaring env
+ENV NODE_ENV production
 
-# Set the working directory inside the container
+# Setting up the work directory
 WORKDIR /app
 
-# Copy package.json and package-lock.json to the container
-COPY package*.json ./
-
-# Install dependencies
+# Installing dependencies
+COPY ./package.json ./
 RUN npm install
 
-# Copy the rest of the application code to the container
+# Copying all the files in our project
 COPY . .
 
-# Build the React app
+# Building our application
 RUN npm run build
 
-# Specify the command to run your application
-CMD ["npm", "start"]
+# Fetching the latest nginx image
+FROM nginx
+
+# Copying built assets from builder
+COPY --from=builder /app/build /usr/share/nginx/html
+
+# Copying our nginx.conf
+COPY nginx.conf /etc/nginx/conf.d/default.conf
