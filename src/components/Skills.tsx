@@ -25,11 +25,11 @@ const Skills = () => {
           <div className='group shadow-md shadow-[#040c16] hover:scale-110 hover:shadow-pink-950 duration-300'>
             <img className='w-20 mx-auto' src={Gcp} alt='GCP icon' />
             <p className='my-4'>GCP</p>
-            <div className='absolute bottom-0 w-full grid grid-cols-1 gap-4 duration-300 opacity-0 group-hover:opacity-100 '>
+            <div className='absolute bottom-0 w-full grid grid-cols-1 gap-4 duration-300 opacity-0 group-hover:opacity-100'>
               {/* ---- icons ---- */}
-              <a href='https://google.accredible.com/profile/adamwilczek482113/wallet#gs.6eemmm'>
+              <a href='https://google.accredible.com/profile/adamwilczek482113/wallet#gs.6eemmm' target='_blank' rel='noopener noreferrer'>
                 <div>
-                  <img className='w-24 mx-auto my-12' src={GcpArchBadge} alt='Ts icon' />
+                  <img className='w-24 mx-auto mb-12' src={GcpArchBadge} alt='Ts icon' />
                 </div>
               </a>
             </div>
