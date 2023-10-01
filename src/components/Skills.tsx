@@ -2,6 +2,8 @@ import React from 'react'
 import Azure from '../assets/clouds/azure.png'
 import Aws from '../assets/clouds/aws.png'
 import Gcp from '../assets/clouds/gcp.png'
+import GcpArchBadge from '../assets/clouds/gcp_arch_badge.png'
+
 import Ts from '../assets/langs/ts.png'
 import go from '../assets/langs/go.png'
 import python from '../assets/langs/python.png'
@@ -20,10 +22,19 @@ const Skills = () => {
           </p>
         </div>
         <div className='w-full grid grid-cols-2 sm:grid-cols-3 gap-4 text-center py-6 border-b-2 border-pink-800'>
-          <div className='shadow-md shadow-[#040c16] hover:scale-110 hover:shadow-pink-950 duration-300'>
+          <div className='group shadow-md shadow-[#040c16] hover:scale-110 hover:shadow-pink-950 duration-300'>
             <img className='w-20 mx-auto' src={Gcp} alt='GCP icon' />
             <p className='my-4'>GCP</p>
+            <div className='absolute bottom-0 w-full grid grid-cols-1 gap-4 duration-300 opacity-0 group-hover:opacity-100 '>
+              {/* ---- icons ---- */}
+              <a href='https://google.accredible.com/profile/adamwilczek482113/wallet#gs.6eemmm'>
+                <div>
+                  <img className='w-24 mx-auto my-12' src={GcpArchBadge} alt='Ts icon' />
+                </div>
+              </a>
+            </div>
           </div>
+          {/*====================*/}
           <div className='shadow-md shadow-[#040c16] hover:scale-110 hover:shadow-pink-950 duration-300'>
             <img className='w-20 mx-auto' src={Azure} alt='Azure icon' />
             <p className='my-4'>Azure</p>
@@ -70,9 +81,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-
     </div >
   )
 }
-
 export default Skills  
